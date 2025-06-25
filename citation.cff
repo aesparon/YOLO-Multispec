@@ -5,8 +5,8 @@ authors:
   - family-names: Esparon
     given-names: Andrew
     affiliation: Charles Darwin University
-    orcid: https://orcid.org/0009-0001-7436-1568  
+    orcid: https://orcid.org/0000-0000-0000-0000
 date-released: 2025-06-26
-repository-code: https://github.com/aesparon/YOLO-MultiSpec
+repository-code: https://github.com/your-username/YOLO-MultiSpec
 version: "0.1.0"
 license: MIT

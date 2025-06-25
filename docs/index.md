@@ -1,18 +1,39 @@
+<p align="center">
+  <img src="../assets/banner.png" alt="YOLO-MultiSpec Banner" width="80%">
+</p>
+
 # Welcome to YOLO-MultiSpec
 
-YOLO-MultiSpec is a deep learning framework designed for high-resolution multispectral object detection and instance segmentation, based on YOLOv8+ architectures.
+YOLO-MultiSpec is an open-source deep learning framework for real-time multispectral object detection and instance segmentation.
 
 ## 🌟 Features
-- Multi-band TIFF (e.g., RGB+NIR+RedEdge) input support
-- CBAM and ECA attention modules
-- +10% mAP improvement in real-world tests
-- Seamless integration with drone, satellite, and GIS pipelines
+- 4+ channel multispectral input support (e.g., RGB + NIR + RedEdge)
+- YOLOv8/YOLOv11-based backbone with CBAM and ECA attention
+- Precision agriculture and drone imagery optimized
+- Easy integration into QGIS and geospatial pipelines
 
-## 🚀 Get Started
-Check out the [GitHub Repository](../) for installation and usage instructions.
+## 🚀 Quick Start
+See the [GitHub Repository](https://github.com/aesparon/YOLO-Multispec) to get started or view the [README](../README.md).
 
-## 📜 Citation
-Work under review for *Remote Sensing Letters*. Citation coming soon.
+<p align="center">
+  <img src="../assets/demo.gif" alt="YOLO-MultiSpec Demo" width="70%">
+</p>
+
+## 📜 Citation (Coming Soon)
+> “YOLO-MultiSpec: A Deep Learning Framework for Multispectral Object Detection and Instance Segmentation”  
+> *Andrew Esparon, 2025, under review in Remote Sensing Letters*  
+> GitHub: https://github.com/aesparon/YOLO-Multispec  
+> DOI: (to be added upon publication)
+
+```bibtex
+@misc{yolo-multispec2025,
+  title={YOLO-MultiSpec: A Deep Learning Framework for Multispectral Object Detection and Instance Segmentation},
+  author={Esparon, Andrew},
+  year={2025},
+  howpublished={\url{https://github.com/aesparon/YOLO-Multispec}},
+  note={Under review}
+}
+```
 
 ---
 
