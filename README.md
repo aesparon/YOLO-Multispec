@@ -134,4 +134,4 @@ MIT License – See [LICENSE_YOLO_Multispec.txt](LICENSE_YOLO_Multispec.txt)
 
 ## 🔖 Keywords
 
-`YOLOv8` · `Multispectral Object Detection` · `Instance Segmentation` · `Remote Sensing AI` · `Agricultural Deep Learning` · `CBAM` · `YOLOv11` · `5-channel Imagery` · `Precision Agriculture` · `Geospatial Deep Learning`
+`YOLOv8` · `YOLOv11` · `YOLOv12` · `Multispectral Object Detection` · `Instance Segmentation` · `Remote Sensing AI` · `Agricultural Deep Learning` · `CBAM` · `5-channel Imagery` · `Precision Agriculture` · `Geospatial Deep Learning`
