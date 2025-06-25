@@ -13,7 +13,7 @@
 ## 🔍 Overview
 
 **YOLO-MultiSpec** is a deep learning framework for Multispectral Object Detection and Instance Segmentation in high-resolution multi-band imagery.  
-It extends YOLOv8/v11/v12 to support additional spectral channels (e.g., RGB + NIR + RedEdge), enabling improved detection performance in vegetation-rich and spectrally complex environments.
+It extends YOLOv8/v11/v12 to support additional spectral channels (e.g., RGB + NIR + RedEdge), enabling improved detection performance in spectrally complex environments.
 
 **Key features:**
 
