@@ -1,11 +1,11 @@
 # YOLO-Multispec
 
-**YOLO-Multispec: A Lightweight Deep Learning Framework for Real-Time Multispectral Object Detection in Vegetation Mapping**
+**YOLO-MultiSpec: A Deep Learning Framework for Multispectral Object Detection and Instance Segmentation **
 
 > 📄 This repository contains code associated with the manuscript:
-> “YOLO-Multispec: A Lightweight Deep Learning Framework for Real-Time Multispectral Object Detection in Vegetation Mapping”
+> “YYOLO-MultiSpec: A Deep Learning Framework for Multispectral Object Detection and Instance Segmentation ”
 
-> 🚧 **Status:** Manuscript currently under review at *Remote Sensing Letters* (RSL).  
+> 🚧 **Status:** Manuscript currently under review pre-submission to *Remote Sensing Letters* (RSL).  
 > A formal citation and DOI will be added upon acceptance.
 
 ---
