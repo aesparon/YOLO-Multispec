@@ -20,7 +20,7 @@ It extends YOLOv8/v11/v12 to support additional spectral channels (e.g., RGB + N
 - ✅ **Multi-band multispectral input support** (e.g., RGB, NIR, RedEdge)
 - 🎯 **Enhanced with CBAM and ECA attention modules** for spatial-spectral refinement
 - 🚀 **+10% mAP@50 improvement** over standard YOLO RGB using weeds-galore dataset as a case study
-- 🧪 **Easy-to-use case study** – just modify input parameters for custom datasets
+- 🧪 **Easy-to-use example case study** – just modify input parameters for custom datasets
 
 Tested on an annotated agricultural dataset (_Weeds-Galore_), YOLO-MultiSpec outperforms RGB and baseline multispectral YOLO variants in both accuracy and generalization.  
 It is designed for rapid integration into geospatial workflows and QGIS toolkits.
