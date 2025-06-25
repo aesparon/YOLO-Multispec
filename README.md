@@ -1,24 +1,29 @@
 # YOLO-Multispec
 
-**YOLO-MultiSpec: A Deep Learning Framework for Multispectral Object Detection and Instance Segmentation **
+**YOLO-Multispec: A Lightweight Deep Learning Framework for Real-Time Multispectral Object Detection in Vegetation Mapping**
 
 > 📄 This repository contains code associated with the manuscript:
-> “YYOLO-MultiSpec: A Deep Learning Framework for Multispectral Object Detection and Instance Segmentation ”
+> “YOLO-Multispec: A Lightweight Deep Learning Framework for Real-Time Multispectral Object Detection in Vegetation Mapping”
 
-> 🚧 **Status:** Manuscript currently under review pre-submission to *Remote Sensing Letters* (RSL).  
+> 🚧 **Status:** Manuscript currently under review at *Remote Sensing Letters* (RSL).  
 > A formal citation and DOI will be added upon acceptance.
 
 ---
 
 ## 🔍 Overview
 
-YOLO-MultiSpec is a deep learning framework for Multispectral Object Detection and Instance Segmentation in high-resolution multi-band multispectral imagery. It extends YOLOv8/v11/v12 to support additional spectral channels (eg RGB + NIR + RedEdge), enabling improved detection performance in vegetation-rich and spectrally complex environments.
-Key features:
-•	✅ multi-band multispectral input support (eg RGB, NIR, RedEdge)
-•	🎯 Enhanced with CBAM and ECA attention modules for spatial-spectral refinement
-•	🚀 Achieves a +10% mAP@50 improvement over standard YOLO RGB
-•	🧪 Easy-to-use case study – just Simple to use. Run case study and simply modify input parameters for custom multispectral datasets.
-Tested on an annotated agricultural dataset (weeds-galore), YOLO-MultiSpec outperforms RGB and baseline multispectral YOLO variants in both accuracy and generalization. Designed for rapid integration into geospatial workflows and QGIS toolkits.
+**YOLO-MultiSpec** is a deep learning framework for Multispectral Object Detection and Instance Segmentation in high-resolution multi-band imagery.  
+It extends YOLOv8/v11/v12 to support additional spectral channels (e.g., RGB + NIR + RedEdge), enabling improved detection performance in vegetation-rich and spectrally complex environments.
+
+**Key features:**
+
+- ✅ **Multi-band multispectral input support** (e.g., RGB, NIR, RedEdge)
+- 🎯 **Enhanced with CBAM and ECA attention modules** for spatial-spectral refinement
+- 🚀 **+10% mAP@50 improvement** over standard YOLO RGB
+- 🧪 **Easy-to-use case study** – just modify input parameters for custom datasets
+
+Tested on an annotated agricultural dataset (_Weeds-Galore_), YOLO-MultiSpec outperforms RGB and baseline multispectral YOLO variants in both accuracy and generalization.  
+It is designed for rapid integration into geospatial workflows and QGIS toolkits.
 
 ---
 
