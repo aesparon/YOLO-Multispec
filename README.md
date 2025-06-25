@@ -29,6 +29,7 @@ It is designed for rapid integration into geospatial workflows and QGIS toolkits
 
 ## 📁 Repository Structure
 
+# NOTE - code being finalised for upload #########################################
 ```bash
 ├── datasets/
 │   ├── weeds-galore/         # Example multispectral input (optional)
