@@ -1,6 +1,6 @@
 # YOLO-Multispec
 
-**YOLO-MultiSpec: A Deep Learning Framework for Multispectral Object Detection and Instance Segmentation **
+**YOLO-MultiSpec: A Deep Learning Framework for Multispectral Object Detection and Instance Segmentation**
 
 > 📄 This repository contains code associated with the manuscript:
 > “YOLO-MultiSpec: A Deep Learning Framework for Multispectral Object Detection and Instance Segmentation”
