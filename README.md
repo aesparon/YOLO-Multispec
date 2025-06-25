@@ -5,7 +5,7 @@
 > 📄 This repository contains code associated with the manuscript:
 > “YOLO-MultiSpec: A Deep Learning Framework for Multispectral Object Detection and Instance Segmentation”
 
-> 🚧 **Status:** Manuscript currently under review at *Remote Sensing Letters* (RSL).  
+> 🚧 **Status:** Manuscript currently under review not yet submitted to *Remote Sensing Letters* (RSL).  
 > A formal citation and DOI will be added upon acceptance.
 
 ---
