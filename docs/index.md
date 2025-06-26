@@ -32,6 +32,7 @@ See the [GitHub Repository](https://github.com/aesparon/YOLO-Multispec) to get s
 > GitHub: https://github.com/aesparon/YOLO-Multispec  
 > DOI: (to be added upon publication)
 
+
 ```bibtex
 @misc{yolo-multispec2025,
   title={YOLO-MultiSpec: A Deep Learning Framework for Multispectral Object Detection and Instance Segmentation},
@@ -44,4 +45,4 @@ See the [GitHub Repository](https://github.com/aesparon/YOLO-Multispec) to get s
 
 ---
 
-© 2025 Andrew Esparon – [Charles Darwin University](https://www.cdu.edu.au)
+© 2025 Andrew Esparon  – [Charles Darwin University](https://www.cdu.edu.au)
