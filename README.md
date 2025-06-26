@@ -50,7 +50,7 @@ It supports **4+ channel TIFF inputs** (e.g., RGB + NIR + RedEdge and other cust
 ## 📦 Installation
 
 ### Requirements:
-- Python 3.8+
+- Python 3.8+ (currently supports 3.10)
 - PyTorch ≥ 1.10
 - Ultralytics YOLOv8+
 - OpenCV, NumPy, tifffile
