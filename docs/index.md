@@ -1,5 +1,5 @@
 <head>
-  <meta name="google-site-verification" content="SPIR_KifHcHJokZ0uj9zVorggHffTdXTvhuHzeTnXzs" />
+  <meta name="google-site-verification" content="xp43qbr5uV-p_JRFp70rsVyZ9hhMrhbfppkq6WXXiMs" />
   <meta name="description" content="YOLO-MultiSpec: Deep Learning Framework for Multispectral Object Detection and Instance Segmentation using enhanced YOLO architectures (YOLOv8/YOLOv11).">
   <meta name="keywords" content="YOLO, multispectral, object detection, instance segmentation, deep learning, remote sensing, precision agriculture, CBAM, ECA">
 </head>
