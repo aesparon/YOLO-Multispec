@@ -74,7 +74,9 @@ Train a YOLO-MultiSpec model on 5-band imagery:
 
 ### Option 1: Run Instantly on Google Colab
 - No setup required; just click and run directly in your browser!
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aesparon/YOLO-Multispec/blob/main/examples/notebooks/YOLO-MultiSpec_demo.ipynb)
+<a href="https://colab.research.google.com/github/aesparon/YOLO-Multispec/blob/main/examples/notebooks/YOLO-MultiSpec_demo.ipynb" target="_blank">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" style="height:50px;">
+</a>
 
 ---
 
