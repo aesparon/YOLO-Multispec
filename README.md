@@ -73,7 +73,8 @@ pip install -r requirements.txt
 Train a YOLO-MultiSpec model on 5-band imagery: 
 
 ### Option 1: Run Instantly on Google Colab
-- No setup required; just click and run directly in your browser!
+- No setup required; 
+<sub>Tip: Right-click the badge and choose "Open in new tab" to keep this page open.</sub>
 <a href="https://colab.research.google.com/github/aesparon/YOLO-Multispec/blob/main/examples/notebooks/YOLO-MultiSpec_demo.ipynb" target="_blank">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" style="height:50px;">
 </a>
