@@ -4,7 +4,7 @@
 ![Python](https://img.shields.io/badge/Python-3.8+-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-Under%20Review-orange)
-![Stars](https://img.shields.io/github/stars/your-username/YOLO-MultiSpec?style=social)
+![Stars](https://img.shields.io/github/stars/aesparon/YOLO-Multispec?style=social)
 
 **YOLO-MultiSpec: A Deep Learning Framework for Multispectral Object Detection and Instance Segmentation**
 
@@ -15,7 +15,7 @@
 ## 🔍 Overview
 
 YOLO-MultiSpec is a custom deep learning framework designed for object detection and instance segmentation in **multispectral remote sensing imagery**.  
-It supports **4+ channel TIFF inputs** (e.g., RGB + NIR + RedEdge) and integrates spatial-spectral attention modules like **CBAM** and **ECA** to improve generalization.
+It supports **4+ channel TIFF inputs** (e.g., RGB + NIR + RedEdge and other custom bands) and integrates spatial-spectral attention modules like **CBAM** and **ECA** to improve generalization.
 
 ---
 
@@ -77,6 +77,25 @@ python train_evaluate.py --data data.yaml --imgsz 1024 --epochs 100 --device 0
 
 - Make sure your `.yaml` file reflects the number of input channels and class labels.
 - Outputs are saved in the `runs/` folder with metrics, predictions, and checkpoints.
+
+---
+
+## 🗂️ Input Format
+
+- **Image format**: `.tif`, `.png` with 4+ spectral bands (uint8 )  ( current uint16 )
+- **Labels**: YOLO format `.txt` files with polygon coordinates for segmentation or bounding boxes
+- **Data YAML**: follows Ultralytics `data.yaml` format, with custom paths and class names
+
+---
+
+- Ensure your `.yaml` file reflects the number of input channels and class labels.
+- Outputs are saved in the `runs/` folder with metrics, predictions, and checkpoints.
+
+### Option 2: Run Instantly on Google Colab
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aesparon/YOLO-Multispec/blob/main/examples/notebooks/demo.ipynb)
+
+- No setup required; just click and run directly in your browser!
 
 ---
 
