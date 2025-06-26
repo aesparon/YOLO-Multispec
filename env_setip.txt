@@ -1,0 +1,19 @@
+conda create -n yolo-multispec python=3.10
+
+
+
+pandas
+#   collections # already installed
+tqdm
+pyyaml
+tifffile
+requests
+matplotlib
+
+
+#######################   check when tun first installed cuda12.1
+# without GPU support - not recomended
+pip install torch torchvision torchaudio
+
+# with GPU support - recomended
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
