@@ -4,9 +4,9 @@
 ![Python](https://img.shields.io/badge/Python-3.8+-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-Under%20Review-orange)
-![Stars](https://img.shields.io/github/stars/aesparon/YOLO-Multispec?style=social)
+![Stars](https://img.shields.io/github/stars/aesparon/YOLO-Multispectral?style=social)
 
-**YOLO-MultiSpec: A Deep Learning Framework for Multispectral Object Detection and Instance Segmentation**
+**YOLO-MultiSpectral: A Deep Learning Framework for Multispectral Object Detection and Instance Segmentation**
 
 > **Real-time object detection and segmentation in 4+ channel multispectral imagery, powered by enhanced YOLOv8/YOLOv11+ backbones.**
 
@@ -14,7 +14,7 @@
 
 ## 🔍 Overview
 
-YOLO-MultiSpec is a custom deep learning framework designed for object detection and instance segmentation in **multispectral remote sensing imagery**.  
+YOLO-MultiSpectral is a custom deep learning framework designed for object detection and instance segmentation in **multispectral remote sensing imagery**.  
 It supports **4+ channel TIFF inputs** (e.g., RGB + NIR + RedEdge and other custom bands) and integrates spatial-spectral attention modules like **CBAM** and **ECA** to improve generalization.
 
 ---
@@ -61,7 +61,7 @@ pip install -r requirements.txt
 
 ### Optional (Anaconda Environment):
 ```bash
-conda create -n yolo-multispec python=3.8
+conda create -n yolo-multispectral python=3.8
 conda activate yolo-multispec
 pip install -r requirements.txt
 ```
@@ -70,12 +70,12 @@ pip install -r requirements.txt
 
 ## 🧪 Quick Start using weed-galore dataset
 
-Train a YOLO-MultiSpec model on 5-band imagery: 
+Train a YOLO-MultiSpectral model on 5-band imagery: 
 
 ### Option 1: Run Instantly on Google Colab
 - No setup required; 
 <sub>Tip: Right-click the badge and choose "Open in new tab" to keep this page open.</sub>
-<a href="https://colab.research.google.com/github/aesparon/YOLO-Multispec/blob/main/examples/notebooks/YOLO-MultiSpec_demo.ipynb" target="_blank">
+<a href="https://colab.research.google.com/github/aesparon/YOLO-Multispectral/blob/main/examples/notebooks/YOLO-MultiSpectral_demo.ipynb" target="_blank">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" style="height:50px;">
 </a>
 
@@ -114,7 +114,7 @@ python train_evaluate.py --data data.yaml --imgsz 1024 --epochs 100 --device 0
 
 ## 🧩 Extending YOLO-MultiSpec
 
-YOLO-MultiSpec is modular by design. You can:
+YOLO-MultiSpectral is modular by design. You can:
 - 💡 Add new attention modules (e.g., SE, CBNet, Transformer blocks)
 - 🔄 Swap backbone (e.g., ResNet, CSPDarknet, ConvNeXt)
 - 🧠 Modify loss functions (e.g., Focal-EIoU, GIoU)
@@ -152,10 +152,10 @@ Please check back for the formal citation once published.
 
 ## 📝 License
 
-MIT License – See [LICENSE_YOLO_Multispec.txt](LICENSE_YOLO_Multispec.txt)
+MIT License – See [LICENSE_YOLO_Multispectral.txt](LICENSE_YOLO_Multispec.txt)
 
 ---
 
 ## 🔖 Keywords
 
-`YOLOv8` · `YOLOv11` · `YOLOv12` · `Multispectral Object Detection` · `Instance Segmentation` · `Remote Sensing AI` · `Agricultural Deep Learning` · `CBAM` · `5-channel Imagery` · `Precision Agriculture` · `Geospatial Deep Learning`
+`Multispectral` · `YOLOv8` · `YOLOv11` · `YOLOv12` · `deep learning ` · `CNN`  · `Object Detection` · `Instance Segmentation` · `Remote Sensing AI` · `Agricultural Deep Learning` · `CBAM` · `5-channel Imagery` · `Precision Agriculture` · `Geospatial Deep Learning`
