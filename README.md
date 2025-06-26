@@ -1,4 +1,4 @@
-# YOLO-MultiSpec
+# YOLO-MultiSpectral
 
 ![PyTorch](https://img.shields.io/badge/PyTorch-≥1.10-red)
 ![Python](https://img.shields.io/badge/Python-3.8+-blue)
