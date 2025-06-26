@@ -68,9 +68,17 @@ pip install -r requirements.txt
 
 ---
 
-## 🧪 Quick Start
+## 🧪 Quick Start using weed-galore dataset
 
-Train a YOLO-MultiSpec model on 5-band imagery:
+Train a YOLO-MultiSpec model on 5-band imagery: 
+
+### Option 1: Run Instantly on Google Colab
+- No setup required; just click and run directly in your browser!
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aesparon/YOLO-Multispec/blob/main/examples/notebooks/YOLO-MultiSpec_demo.ipynb)
+
+---
+
+### Option 2: Run locally
 ```bash
 python train_evaluate.py --data data.yaml --imgsz 1024 --epochs 100 --device 0
 ```
@@ -91,13 +99,7 @@ python train_evaluate.py --data data.yaml --imgsz 1024 --epochs 100 --device 0
 - Ensure your `.yaml` file reflects the number of input channels and class labels.
 - Outputs are saved in the `runs/` folder with metrics, predictions, and checkpoints.
 
-### Option 2: Run Instantly on Google Colab
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aesparon/YOLO-Multispec/blob/main/examples/notebooks/demo.ipynb)
-
-- No setup required; just click and run directly in your browser!
-
----
 
 ## 🗂️ Input Format
 
