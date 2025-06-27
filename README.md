@@ -35,7 +35,7 @@
 
 ### Option 1: Run Instantly on Google Colab
 <a href="https://colab.research.google.com/github/aesparon/YOLO-MultiSpectral/blob/main/examples/notebooks/YOLO-MultiSpectral_demo.ipynb" target="_blank">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" style="height:50px;">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" style="height:30px;">
 </a>
 
 ## 🎥 Link to youtube demo usage
@@ -87,12 +87,8 @@ pip install -r requirements.txt
 
 ## 🧪 Quick Start using weed-galore dataset
 
-### Option 1: Run Instantly on Google Colab
-<a href="https://colab.research.google.com/github/aesparon/YOLO-MultiSpectral/blob/main/examples/notebooks/YOLO-MultiSpectral_demo.ipynb" target="_blank">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" style="height:50px;">
-</a>
 
-### Option 2: Run locally
+### Local pc setup
 ```bash
 python train_evaluate.py --data data.yaml --imgsz 1024 --epochs 100 --device 0
 ```
