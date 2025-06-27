@@ -26,9 +26,22 @@
 ---
 
 ## 🧠 Model Architecture
-- Backbone: Modified YOLO with CBAM, ECA, and spectral convolutions
-- Input shape: 5xHxW TIFF (current support for uint8 and soon to be modified for uint16)
+- Backbone: Modified YOLO (v3-v12) with CBAM, ECA, and spectral convolutions
+- Input :  images (png,tiff required for 5 channel support) (current support for uint8 and soon to be modified for uint16)
 - Output: Bounding boxes + instance masks
+
+
+## 🧪 Quick Start using weed-galore dataset
+
+### Option 1: Run Instantly on Google Colab
+<a href="https://colab.research.google.com/github/aesparon/YOLO-MultiSpectral/blob/main/examples/notebooks/YOLO-MultiSpectral_demo.ipynb" target="_blank">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" style="height:50px;">
+</a>
+
+## 🎥 Link to youtube demo usage
+
+[![YOLO-MultiSpectral Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/hqdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+
 
 ---
 
