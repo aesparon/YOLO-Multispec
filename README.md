@@ -27,7 +27,7 @@
 
 ## 🧠 Model Architecture
 - Backbone: Modified YOLO (v3-v12) with CBAM, ECA, and spectral convolutions
-- Input :  images (png,tiff required for 5 channel support) (current support for uint8 and soon to be modified for uint16)
+- Input :  images (png,tiff required for 5 channel support)
 - Output: Bounding boxes + instance masks
 
 
