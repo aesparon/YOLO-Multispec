@@ -19,17 +19,18 @@
 ## 🚀 Features
 - ✅ 4+ band multispectral TIFF input support (current support for uint8 and soon to be modified for uint16)
 - ✅ +10% mAP@50 gain over standard RGB YOLO
-- ✅ Abilitly to leverage transfer learning to MultiSpectral inputs
-- ✅ Attention modules for spectral feature enhancement
-        - CBAM (Convolutional Block Attention Module)
-        - ECA (Efficient Channel Attention) 
-        - Spectral-aware Convolutions
-        - DropBlock and GroupNorm
-        - Safe gradient clipping and early stopping
+- ✅ Ability to leverage transfer learning to MultiSpectral inputs
+- ✅ Attention modules for spectral feature enhancement:
+  - CBAM (Convolutional Block Attention Module)
+  - ECA (Efficient Channel Attention) 
+  - Spectral-aware Convolutions
+  - DropBlock and GroupNorm
+  - Safe gradient clipping and early stopping
 - ✅ Optimized for QGIS workflows and UAV imagery
 - ✅ Modular and open source architecture for easy integration and extension
 
 ---
+
 
 ## 🧠 Model Architecture
 - Backbone: Modified YOLO (v3-v12) with CBAM, ECA, and spectral convolutions
