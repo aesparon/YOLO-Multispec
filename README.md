@@ -21,11 +21,11 @@
 - ✅ +10% mAP@50 gain over standard RGB YOLO
 - ✅ Abilitly to leverage transfer learning to MultiSpectral inputs
 - ✅ Attention modules for spectral feature enhancement
-        * CBAM (Convolutional Block Attention Module)
-        * ECA (Efficient Channel Attention) 
-        * Spectral-aware Convolutions
-        * DropBlock and GroupNorm
-        * Safe gradient clipping and early stopping
+        - CBAM (Convolutional Block Attention Module)
+        - ECA (Efficient Channel Attention) 
+        - Spectral-aware Convolutions
+        - DropBlock and GroupNorm
+        - Safe gradient clipping and early stopping
 - ✅ Optimized for QGIS workflows and UAV imagery
 - ✅ Modular and open source architecture for easy integration and extension
 
