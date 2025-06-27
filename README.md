@@ -40,7 +40,7 @@
 
 ## 🎥 Link to youtube demo usage
 
-[![YOLO-MultiSpectral Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/hqdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[![Coming soon](https://img.youtube.com/vi/YOUR_VIDEO_ID/hqdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
 
 
 ---
@@ -168,4 +168,4 @@ AGPL-3.0 License – See [LICENSE](LICENSE)
 ---
 
 ## 🔖 Keywords
-`Multispectral` · `YOLOv8` · `YOLOv11` · `YOLOv12` · `deep learning` · `CNN` · `Object Detection` · `Instance Segmentation` · `Remote Sensing AI` · `Agricultural Deep Learning` · `CBAM` · `5-channel Imagery` · `Precision Agriculture` · `Geospatial Deep Learning`
+`Multispectral` · `YOLOv8` · `YOLOv11` · `YOLOv12` · `deep learning` · `weeds galore` · `CNN` · `Object Detection` · `Instance Segmentation` · `Remote Sensing AI` · `Agricultural Deep Learning` · `CBAM` · `5-channel Imagery` · `Precision Agriculture` · `Geospatial Deep Learning`
