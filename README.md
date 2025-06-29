@@ -143,16 +143,17 @@ model.val(data='data.yaml')
 ---
 
 ## 📦 Citation
-If you use this project in your research:
+"If you use this software, please cite it as below.":
+Currently under pre-publication review. Not yet submitted for Journal publication (RSL)
 ```bibtex
 @misc{yolo-multispectral,
   author       = {Andrew Esparon},
-  title        = {YOLO-MultiSpectral},
+  title        = {YOLO-MultiSpectral: A Deep Learning Framework for Multispectral Object Detection and Instance Segmentation},
   year         = {2025},
   publisher    = {GitHub},
   journal      = {GitHub Repository},
   howpublished = {\url{https://github.com/aesparon/YOLO-MultiSpectral}},
-  doi          = {10.5281/zenodo.123456789}
+  doi          = {to be added upon publication}
 }
 ```
 
