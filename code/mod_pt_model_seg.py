@@ -8,7 +8,7 @@ from pathlib import Path
 import torch
 import torch.nn as nn
 
-
+# path
 yolo_source_path = 'D:/PD/yolo_mod/working2/yolo_source/yolo_2025_06_04_mod/ultralytics-main/'
 sys.path.insert(1, yolo_source_path)
 import ultralytics
@@ -134,7 +134,7 @@ def patch_yolo_seg_ckpt(model_base, output_model_train , in_channels=5, nc=5 , c
 
         # new modified model from YAML so no transfer learning
         output_model_train = output_model_train  + '_no_TL_'  + bb_seg 
-        model_created = output_model_train + '/mod_model/' + model_base +  '_no_TL.pt'
+        model_created = output_model_train + '/mod_model/' + model_base_wo_ext +  '_no_TL.pt'
 
         
     elif extension == '.pt' or extension == '':

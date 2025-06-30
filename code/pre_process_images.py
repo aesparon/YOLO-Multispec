@@ -274,6 +274,111 @@ def sort_images_from_split_files (txt_file_to_sort , img_folder ,output_folder):
 
                     
 
+
+
+
+
+
+
+def merge_files(input_folders, output_folder):
+    os.makedirs(output_folder, exist_ok=True)
+    for folder in input_folders:
+        if not os.path.isdir(folder):
+            print(f"❌ Skipping invalid folder: {folder}")
+            continue
+        for filename in os.listdir(folder):
+            src = os.path.join(folder, filename)
+            dst = os.path.join(output_folder, filename)
+
+            # If file already exists in destination, rename it to avoid overwriting
+            if os.path.exists(dst):
+                name, ext = os.path.splitext(filename)
+                counter = 1
+                while os.path.exists(dst):
+                    new_name = f"{name}_{counter}{ext}"
+                    dst = os.path.join(output_folder, new_name)
+                    counter += 1
+
+            shutil.copy2(src, dst)
+            print(f"✅ Copied: {src} → {dst}")
+
+
+
+
+
+
+
+def stack_RGB_set_uint8_sort_train_val_test (images_merge_band_images , uint16_to_uint8_method ):
+
+    #input_folder_RGB = "./weedsgalore-dataset/images_merge/"
+    #output_folder_RGB_uint8 = "./weedsgalore-dataset/RGB/RGB_uint16/"
+
+
+    # temp  stack uint16
+    temp_output_folder_RGB_uint16 =  "./weedsgalore-dataset/RGB/RGB_uint16/"
+
+    # Stack RGB bands
+    batch_stack_rgb_triplets(images_merge_band_images, temp_output_folder_RGB_uint16)
+
+    folder_RGB_uint8 = './weedsgalore-dataset/RGB/RGB_uint8_' + uint16_to_uint8_method + '/'
+    convert_folder_uint16_to_uint8(temp_output_folder_RGB_uint16, folder_RGB_uint8, method=uint16_to_uint8_method)
+
+    train_val_test_list = ['train' , 'val', 'test']
+    output_RGB_train_val_test_path = './weedsgalore-dataset/train_val_test/RGB/'
+    for train_val_test in train_val_test_list: 
+
+        #  RGB  ############################################################################################
+        txt_split_file_to_sort = './weedsgalore-dataset/weedsgalore-dataset/splits/' + train_val_test + '.txt'    # this folder have train/val/test split used for experimental traonong
+        #input_instances_folder =  folder_RGB_uint8   #'./weedsgalore-dataset/RGB/RGB_uint8_normalize/'
+        output_folder_instances = output_RGB_train_val_test_path + train_val_test + '/images/'
+
+        #sort_images (txt_file_to_sort ,input_semantics_folder ,  output_folder_semantics)
+        sort_images_from_split_files (txt_split_file_to_sort ,folder_RGB_uint8 ,  output_folder_instances)
+
+
+        
+
+    return output_RGB_train_val_test_path
+
+
+
+
+
+def stack_RGBRN_set_uint8_sort_train_val_test (images_merge_band_images , uint16_to_uint8_method ):
+    
+
+    # Step 3.  Stack RGBRN images and convert from RGBRN uint16 to uint8   #######################################################3
+    #input_folder_RGBRN = "./weedsgalore-dataset/images_merge/"
+    temp_output_folder_RGBRN_uint16 = "./weedsgalore-dataset/RGBRN/RGBRN_uint16/"
+
+    # Stack RGBNR bands
+    batch_stack_5band(images_merge_band_images, temp_output_folder_RGBRN_uint16)
+
+
+    folder_RGBRN_uint8 = './weedsgalore-dataset/RGBRN/RGBRN_uint8_' + uint16_to_uint8_method + '/'
+    convert_folder_uint16_to_uint8(temp_output_folder_RGBRN_uint16, folder_RGBRN_uint8, method=uint16_to_uint8_method)
+
+    train_val_test_list = ['train' , 'val', 'test']
+    output_RGBRN_train_val_test_path = './weedsgalore-dataset/train_val_test/RGBRN/'
+    for train_val_test in train_val_test_list: 
+        #  RGBRN  ############################################################################################
+        txt_split_file_to_sort = './weedsgalore-dataset/weedsgalore-dataset/splits/' + train_val_test + '.txt'
+        #input_instances_folder = './weedsgalore-dataset/RGBRN/RGBRN_uint8_normalize/'
+        output_folder_instances = output_RGBRN_train_val_test_path  + train_val_test + '/images/'
+
+        #sort_images (txt_file_to_sort ,input_semantics_folder ,  output_folder_semantics)
+        sort_images_from_split_files (txt_split_file_to_sort ,folder_RGBRN_uint8 ,  output_folder_instances)
+
+
+    return output_RGBRN_train_val_test_path
+
+
+
+
+
+
+
+
 # def main():
 #     create_RGB = True
 #     if create_RGB:
@@ -308,40 +413,3 @@ def sort_images_from_split_files (txt_file_to_sort , img_folder ,output_folder):
 # if __name__ == '__main__':
 #     main()
 
-
-
-
-
-
-
-def merge_files(input_folders, output_folder):
-    os.makedirs(output_folder, exist_ok=True)
-    for folder in input_folders:
-        if not os.path.isdir(folder):
-            print(f"❌ Skipping invalid folder: {folder}")
-            continue
-        for filename in os.listdir(folder):
-            src = os.path.join(folder, filename)
-            dst = os.path.join(output_folder, filename)
-
-            # If file already exists in destination, rename it to avoid overwriting
-            if os.path.exists(dst):
-                name, ext = os.path.splitext(filename)
-                counter = 1
-                while os.path.exists(dst):
-                    new_name = f"{name}_{counter}{ext}"
-                    dst = os.path.join(output_folder, new_name)
-                    counter += 1
-
-            shutil.copy2(src, dst)
-            print(f"✅ Copied: {src} → {dst}")
-
-# # Example usage
-# input_folders = [
-#     "folder1",
-#     "folder2",
-#     "folder3"
-# ]
-# output_folder = "merged_output"
-
-# merge_files(input_folders, output_folder)
