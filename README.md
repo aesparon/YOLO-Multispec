@@ -137,4 +137,4 @@ MIT License – See [LICENSE](https://github.com/aesparon/YOLO-Multispectral/blo
 ---
 
 ## 🔖 Keywords
-`Multispectral` · `YOLOv8` · `YOLOv11` · `YOLOv12` · `deep learning` · `weeds galore` · `CNN` · `Object Detection` · `Instance Segmentation` · `Remote Sensing AI` · `Agricultural Deep Learning` · `CBAM` · `5-channel Imagery` · `Precision Agriculture` · `Geospatial Deep Learning`
+`Multispectral` · `YOLOv8` · `YOLOv11` · `YOLOv12` · `deep learning` · `weeds galore` · `CNN` · `Object Detection` · `Instance Segmentation` · `Remote Sensing` · `Agricultural Deep Learning` · `CBAM` · `5-channel Imagery` · `Precision Agriculture` · `Geospatial Deep Learning`
