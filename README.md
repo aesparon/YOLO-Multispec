@@ -12,7 +12,7 @@
 
 ## 🔍 Overview
 
-**YOLO-MultiSpectral** is a deep learning framework based on YOLO that supports multispectral imagery with 4 or more bands (e.g., RGB + NIR + RedEdge) for object detection and instance segmentation. Designed for UAV imagery, precision agriculture, and environmental monitoring, it integrates spatial-spectral attention mechanisms like **CBAM** and **ECA** to enhance accuracy and generalization.
+**YOLO-MultiSpectral** is a deep learning framework based on YOLO that supports multispectral imagery with 4 or more bands (e.g., RGB + NIR + RedEdge) for object detection and instance segmentation. Designed for UAV imagery, precision agriculture, and environmental monitoring, it integrates attention modules for spectral feature enhancement.
 
 ---
 
@@ -34,7 +34,7 @@
 
 ## 🧪 Quick Start using Weeds-galore dataset 
 
-This repo includes training support for the **Weeds-Galore** dataset:
+This repository includes training support for the **Weeds-Galore** dataset:
 - 5-band UAV imagery (R, G, B, NIR, RedEdge)
 - Classes: *maize, amaranth, grass, quickweed, other*
 - Achieved **+10% mAP@50** over YOLO (RGB)
@@ -91,7 +91,7 @@ ADD STEPS HERE
 
 ---
 
-## 🧩 Extending YOLO-MultiSpec
+## 🧩 Extending YOLO-MultiSpectral
 
 YOLO-MultiSpectral is modular by design. You can:
 - 💡 Add new attention modules (e.g., SE, CBNet, Transformer blocks)
@@ -125,14 +125,14 @@ Currently under pre-publication review. Not yet submitted for Journal publicatio
 
 ## 📬 Contact
 **Andrew Esparon**  
-📧 andrew.esparon@cdu.edu.au  
+📧 andrew.esparon@cdu.edu.au  📧 andrew.esparon@dcceew.gov.au  
 🌐 [Charles Darwin University](https://www.cdu.edu.au)
 🌐 [Office of the Supervising Scientist](https://www.dcceew.gov.au/science-research/supervising-scientist)
 
 ---
 
 ## 📝 License
-AGPL-3.0 License – See [LICENSE](LICENSE)
+MIT License – See [LICENSE](https://github.com/aesparon/YOLO-Multispectral/blob/main/docs/LICENSE_YOLO_Multispectral.txt)
 
 ---
 
