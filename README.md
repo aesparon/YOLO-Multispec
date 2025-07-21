@@ -11,41 +11,89 @@
 ![Issues](https://img.shields.io/github/issues/aesparon/YOLO-Multispectral)
 ![Stars](https://img.shields.io/github/stars/aesparon/YOLO-Multispectral)
 
+---
+
 ## 🔍 What is YOLO-Multispectral?
 
-**YOLO-Multispectral** is an open-source implementation of **YOLOv8 and YOLOv11** modified to support 5+ **multispectral remote sensing imagery** (e.g., RGB, NIR, RedEdge) for **object detection** and **semantic segmentation**, with geospatial metadata support and attention-enhanced backbones (CBAM, ECA).
+**YOLO-Multispectral** is an open-source extension of **Ultralytics YOLOv8/v11**, tailored to support **4- to 5-band multispectral remote sensing imagery** (e.g., RGB + NIR, RedEdge) for **object detection** and **semantic segmentation**.  
+It includes support for **geospatial metadata**, **TIFF inputs**, and **attention-enhanced backbones** (CBAM, ECA).
+
+---
 
 ## 🌿 Why Multispectral Object Detection?
 
-Traditional RGB-based models often miss subtle vegetation features. By integrating **NIR** and **RedEdge** bands, this repo improves vegetation segmentation and monitoring in ecological and agricultural applications.
+Standard RGB models often overlook critical spectral cues found in vegetation, soil, and water. By integrating **NIR** and **RedEdge** bands, this model provides superior accuracy for:
+- Weed detection
+- Crop health monitoring
+- Ecological surveys
+- Land cover classification
 
-## 💡 Features
+---
 
-- ✅ 4+ band TIFF multispectral input support
-- ✅ Apply transfer learning to multispectral imagery for improved accuracy on limited training data
-- ✅ SpectralConv, CBAM, ECA, DropBlock, GroupNorm enhancements
-- ✅ Mask + Box segmentation via YOLOv8/v11/v12 (NOTE - v12 Currrently only supporting only bounding boxes)
-- ✅ Geospatial compatibility for QGIS + tiled workflows
+## 💡 Key Features
+
+- ✅ TIFF multispectral input (4+ channels)
+- ✅ Custom YOLOv8/v11/v12 models with 5-band input patching
+- ✅ SpectralConv, CBAM, ECA, DropBlock, and GroupNorm modules
+- ✅ Mask + Box segmentation support (v8/v11); Box-only for v12
+- ✅ GeoTIFF & tiled dataset compatibility (e.g., QGIS-ready outputs)
+- ✅ Transfer learning from RGB to multispectral weights
+
+---
+
+## 📊 Results
+
+<p align="center">
+  <img src="assets/Figure_1_5_class.png" alt="5-Class Detection Example" width="80%">
+  <br>
+  <em>Figure 1: Example results on 5-class multispectral weed segmentation.</em>
+</p>
+
+<p align="center">
+  <img src="assets/Figure_1_2class.png" alt="2-Class Detection Example" width="80%">
+  <br>
+  <em>Figure 2: Example results on 2-class binary segmentation task (vegetation vs background).</em>
+</p>
+
 
 ## 🧠 Model Enhancements
 
-| Module     | Purpose                        | Source Reference |
-|------------|--------------------------------|------------------|
-| CBAM       | Channel + Spatial Attention    | [CBAM 2018](https://arxiv.org/abs/1807.06521) |
-| ECA        | Efficient Channel Attention    | [ECA 2020](https://arxiv.org/abs/1910.03151) |
-| SpectralConv | Band-specific Filtering     | [Inspired by 3D-HSI CNNs] |
-| DropBlock  | Regularization                | [DropBlock 2018](https://arxiv.org/abs/1810.12890) |
-| GroupNorm  | Small batch normalization      | [GN 2018](https://arxiv.org/abs/1803.08494) |
+| Module        | Purpose                           | Reference |
+|---------------|-----------------------------------|-----------|
+| CBAM          | Channel & Spatial Attention       | [CBAM 2018](https://arxiv.org/abs/1807.06521) |
+| ECA           | Lightweight Channel Attention     | [ECA 2020](https://arxiv.org/abs/1910.03151) |
+| SpectralConv  | Band-specific Spectral Filtering  | *Inspired by 3D CNNs for HSI* |
+| DropBlock     | Spatial Dropout Regularization    | [DropBlock 2018](https://arxiv.org/abs/1810.12890) |
+| GroupNorm     | Robust for Small Batches          | [GN 2018](https://arxiv.org/abs/1803.08494) |
+
+---
 
 ## 📦 Dataset Support
 
-- [x] 5/10 band MicaSense/RedEdge drone imagery
-- [x] LLVIP RGB-IR visible-infrared dataset
-- [x] WeedsGalore RGB+NIR segmentation benchmark
+- ✅ **MicaSense / RedEdge**: 5-10 band drone imagery
+- ✅ **WeedsGalore**: RGB + NIR semantic segmentation
+- ✅ **LLVIP**: Infrared and visible-light object detection
+- ✅ Custom TIFF stacks with spectral metadata
 
-## 🔗 Citation
+---
 
-Please cite this repo if it supports your work:
+## 🚀 Quick Links
+
+### 📘 Example Notebook (in progress)
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aesparon/YOLO-MultiSpectral/blob/main/examples/notebooks/YOLO-MultiSpectral_demo.ipynb)
+
+> 🛠️ **Colab demo coming soon (ETA: 11/7/2025)**
+
+### 🎥 Demo Video (coming soon)
+
+[![YouTube](https://img.shields.io/badge/Demo-YouTube-red)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+
+---
+
+## 📖 Citation
+
+If you use **YOLO-Multispectral** in your research, please cite:
 
 ```bibtex
 @misc{yolo-multispectral,
@@ -54,22 +102,3 @@ Please cite this repo if it supports your work:
   year = {2025},
   howpublished = {\url{https://github.com/aesparon/YOLO-Multispectral}},
 }
-```
-
----
-
-## 🎥 Watch this for overview (UNDER CONSTUCTION)
-
-[![Coming soon](https://img.shields.io/badge/Demo-YouTube-red)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
-
-### Run Instantly on Google Colab (under construction - completion by 11/7/2015)
-<a href="https://colab.research.google.com/github/aesparon/YOLO-MultiSpectral/blob/main/examples/notebooks/YOLO-MultiSpectral_demo.ipynb" target="_blank">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" style="height:30px;">
-</a>
-
-
-## 🧠 Author
-
-Developed by **Andrew Esparon**  
-Remote Sensing AI Researcher | QGIS + PyTorch Ecosystem  
-<!--[GitHub](https://github.com/aesparon) -->
