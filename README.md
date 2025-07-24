@@ -11,7 +11,7 @@
 ![Issues](https://img.shields.io/github/issues/aesparon/YOLO-Multispectral)
 ![Stars](https://img.shields.io/github/stars/aesparon/YOLO-Multispectral)
 
----
+---  
 
 ## 🔍 What is YOLO-Multispectral?
 
@@ -44,16 +44,12 @@ Standard RGB models often overlook critical spectral cues found in vegetation, s
 ## 📊 Results
 
 <p align="center">
-  <img src="assets/Figure_1_5_class.png" alt="5-Class Detection Example" width="80%">
+  <img src="assets/figure_2_and 5_class.jpg" alt=" 2- class and 5-Class Detection Example" width="80%">
   <br>
   <em>Figure 1: Example results on 5-class multispectral weed segmentation.</em>
 </p>
 
-<p align="center">
-  <img src="assets/Figure_1_2class.png" alt="2-Class Detection Example" width="80%">
-  <br>
-  <em>Figure 2: Example results on 2-class binary segmentation task (vegetation vs background).</em>
-</p>
+
 
 
 ## 🧠 Model Enhancements
